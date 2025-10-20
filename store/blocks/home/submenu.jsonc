@@ -1,0 +1,79 @@
+{
+  "disclosure-layout#menu-inferior-1": {
+    "title": "Coluna - Menu 1",
+    "props": {
+      "blockClass": ["bottonMenu"],
+      "preventVerticalStretch": false
+    },
+    "children": [
+      "disclosure-trigger#menu-1",
+      "disclosure-content#menu-1-content"
+    ]
+  },
+
+  "disclosure-trigger#menu-1": {
+    "children": [
+      "rich-text#menu-1-title",
+      "disclosure-state-indicator#footer-menu-icon"
+    ],
+    "props": {
+      "blockClass": ["bottonMenuTitle"]
+    }
+  },
+  "rich-text#menu-1-title": {
+    "title": "Menu 1 - Titulo",
+    "props": {
+      "text": "o que é a lista",
+      "blockClass": "bottonMenuTitle"
+    }
+  },
+  "disclosure-content#menu-1-content": {
+    "children": ["rich-text#menu-1-content"]
+  },
+  "rich-text#menu-1-content": {
+    "title": "Menu 1 - Conteudo",
+    "props": {
+      "text": "A lista de presentes é",
+      "blockClass": "bottonMenuText"
+    }
+  },
+  //menu 2
+  "disclosure-layout#menu-inferior-2": {
+    "title": "Coluna - Menu 2",
+    "props": {
+      "blockClass": ["bottonMenu"],
+      "preventVerticalStretch": false
+    },
+    "children": [
+      "disclosure-trigger#menu-2",
+      "disclosure-content#menu-2-content"
+    ]
+  },
+
+  "disclosure-trigger#menu-2": {
+    "children": [
+      "rich-text#menu-2-title",
+      "disclosure-state-indicator#footer-menu-icon"
+    ],
+    "props": {
+      "blockClass": ["bottonMenuTitle"]
+    }
+  },
+  "rich-text#menu-2-title": {
+    "title": "Menu 2 - Titulo",
+    "props": {
+      "text": "vantagens da lista",
+      "blockClass": "bottonMenuTitle"
+    }
+  },
+  "disclosure-content#menu-2-content": {
+    "children": ["rich-text#menu-2-content"]
+  },
+  "rich-text#menu-2-content": {
+    "title": "Menu 2 - Conteudo",
+    "props": {
+      "text": "As vantagens da lista são ",
+      "blockClass": "bottonMenuText"
+    }
+  }
+}

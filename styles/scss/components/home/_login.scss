@@ -1,0 +1,387 @@
+:global
+  .vtex-flex-layout-0-x-flexRow--home-with-user
+  .vtex-flex-layout-0-x-flexColChild--search-list {
+  .t-heading-2 {
+    font-size: $font-size-xl !important;
+    font-weight: $bold !important;
+    color: $black !important;
+    margin-top: 8px;
+
+    @media (min-width: $d) {
+      font-size: $font-size-xxxl !important;
+      margin-top: 32px;
+    }
+  }
+
+  .mt5 {
+    .vtex-button {
+      img {
+        display: none !important;
+      }
+
+      span {
+        font-size: 0;
+
+        &::before {
+          content: 'Criar nova lista';
+          font-size: $font-size-md;
+          font-weight: $semi-bold;
+        }
+      }
+    }
+  }
+}
+
+:global .vtex-flex-layout-0-x-flexRow--listpage__wallet {
+  .bg-muted-5 {
+    background-color: #ffffff !important;
+  }
+  .mt7,
+  .mt5 {
+    margin-top: 0 !important;
+  }
+  .mb5 {
+    margin-bottom: 0;
+  }
+  .w-80 {
+    width: 100% !important;
+  }
+  .vtex-pageHeader__container {
+    padding: 0 !important;
+  }
+}
+
+:global .vtex-flex-layout-0-x-flexRow--listpage__wallet {
+  .vtex-pageHeader__container {
+    width: 100%;
+  }
+
+  .vtex__icon-caret-down,
+  .vtex__icon-caret-up {
+    display: none;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+    font-size: $font-size-xxl;
+
+    @media (min-width: $d) {
+      font-size: $font-size-xxxl;
+    }
+
+    &::before {
+      content: url(assets/svg/icon-gift-list.svg);
+      margin-right: 16px;
+    }
+
+    &::after {
+      content: url(assets/svg/icon-angle-down.svg);
+      filter: brightness(0);
+      margin-left: 16px;
+    }
+  }
+
+  .t-heading-2 {
+    color: $black;
+    font-family: $main-font;
+  }
+
+  .t-heading-4 {
+    margin-bottom: 24px;
+    font-family: $main-font;
+    font-weight: $regular;
+    font-size: $font-size-md;
+
+    @media (min-width: $d) {
+      font-size: $font-size-xl;
+    }
+  }
+
+  .mb5.t-heading-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+
+    .history {
+      position: initial !important;
+
+      button {
+        border: 1px solid $cor-2;
+        font-weight: $bold;
+        font-size: $font-size-md;
+      }
+    }
+  }
+
+  .width-input {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+
+    div{
+      font-size: $font-size-xs;
+    }
+
+    @media (max-width: $d){
+      font-size: $font-size-xs;
+
+      &:last-child{
+        margin-top:24px !important;
+      }
+    }
+
+    button.vtex-button *{
+      font-size: $font-size-md !important;
+    }
+  }
+
+  .width-divider {
+    margin-bottom: 24px;
+  }
+
+  svg {
+    filter: grayscale(1) brightness(0);
+  }
+
+  input,
+  button {
+    height: 40px;
+
+    @media (min-width: $d) {
+      height: 48px;
+    }
+  }
+
+  .rescue {
+    font-family: $main-font;
+    color: $cinza;
+    font-weight: $regular;
+
+    .desktop-or-mobile {
+      display: flex;
+      align-items: center;
+    }
+
+    .vtex-input-prefix__group {
+      margin-top: 4px;
+      border: 1px solid $cinza-claro;
+      height: 40px;
+
+      @media (min-width: $d) {
+        height: 48px;
+      }
+    }
+
+    input {
+      color: $cinza;
+    }
+
+    button {
+      transition: all 0.2s;
+      border: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $cor-2 !important;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+// MODAL
+:global .vtex-flex-layout-0-x-flexRowContent--user-list {
+  .modal-create-list .vtex-modal__modal {
+    padding: 48px 20px 24px !important;
+    width: 100% !important;
+    max-width: 328px !important;
+    position: relative !important;
+
+    @media (min-width: 640px) {
+      max-width: 424px !important;
+    }
+
+    * {
+      font-family: $main-font;
+    }
+
+    .vtex-modal__close-icon {
+      padding: 25px 21px;
+      opacity: 0.7;
+    }
+
+    > div {
+      padding: 0;
+      position: initial !important;
+
+      &.shadow-4 {
+        box-shadow: none !important;
+        border-bottom: 1px solid $cinza-claro;
+      }
+    }
+
+    .f3.c-on-base.w-100 {
+      margin-left: initial !important;
+      padding-bottom: 10px;
+      color: $black;
+      font-weight: $bold;
+
+      @media (min-width: 640px) {
+        margin-bottom: 24px;
+      }
+    }
+
+    .mh7-m {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    label {
+      font-size: $font-size-xs;
+      color: $cinza;
+      margin-bottom: 7px;
+
+      &.lh-copy {
+        margin-bottom: 0;
+      }
+    }
+
+    .vtex-input-prefix__group {
+      border: 1px solid $cinza-claro;
+      height: 48px;
+      border-radius: 8px;
+
+      input {
+        height: 48px;
+        font-size: $font-size-sm;
+      }
+    }
+
+    .pv4.ph7-m.bg-muted-5.pt3.pb3 {
+      padding: 24px 0 !important;
+      margin-top: 24px;
+      margin-bottom: 32px;
+      border-top: 1px solid $cinza-claro;
+      border-bottom: 1px solid $cinza-claro;
+      background-color: $branco;
+    }
+
+    .ml6-m,
+    .mr6-m {
+      margin: 0;
+    }
+
+    .flex-column.flex-row-m {
+      column-gap: 16px;
+    }
+
+    .vtex-radioGroup {
+      .vtex-radio,
+      .vtex-radioGroup__fieldset,
+      label {
+        margin: 0;
+      }
+
+      .vtex-radioGroup__radioLabel {
+        margin-right: 16px;
+      }
+
+      .vtex-radio__fakeRadio {
+        width: 16px !important;
+        height: 16px !important;
+        border: 1px solid $cinza-claro !important;
+        border-radius: 0 !important;
+
+        .vtex-radio__fakeRadioInner {
+          width: 10px;
+          height: 10px;
+          border: none;
+          border-radius: 0 !important;
+          background-color: $cor-2;
+        }
+      }
+    }
+
+    .mv4.mh6.mh7-m {
+      margin-bottom: 32px !important;
+
+      @media (min-width: $d) {
+        margin-bottom: 40px !important;
+      }
+
+      + div.flex-column.flex-row-m {
+        border: none !important;
+
+        > div {
+          padding: 0 !important;
+
+          &:first-child {
+            width: 100%;
+
+            @media (min-width: 640px) {
+              max-width: 154px;
+            }
+
+            button.vtex-button {
+              height: 40px;
+              border-radius: 4px;
+              border: 1px solid $cinza-medio;
+              transition: opacity 0.2s;
+
+              @media (min-width: $d) {
+                height: 48px;
+              }
+
+              * {
+                font-size: $font-size-md;
+                font-weight: $bold;
+                color: $cinza-medio;
+              }
+
+              &:hover {
+                background-color: $white;
+                opacity: 0.5;
+              }
+
+              &::before {
+                display: none;
+              }
+            }
+          }
+          &:last-child {
+            button.vtex-button {
+              height: 40px;
+              border-radius: 4px;
+
+              @media (max-width: 640px) {
+                margin-top: 16px;
+              }
+
+              @media (min-width: $d) {
+                height: 48px;
+              }
+
+              * {
+                font-size: $font-size-md;
+                font-weight: $bold;
+                color: $white;
+              }
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .mt3.mt0-m.w-50-m.pl0.pl5-m {
+      width: 100%;
+    }
+  }
+}

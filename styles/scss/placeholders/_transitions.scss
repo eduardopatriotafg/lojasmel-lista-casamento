@@ -1,0 +1,9 @@
+%hoverOpacity{
+    transition: all .2s;
+
+    &:focus,
+    &:active,
+    &:hover{
+      //opacity: .7;
+    }
+}

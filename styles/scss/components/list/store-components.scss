@@ -1,0 +1,127 @@
+// .searchBarInnerContainer--header-search {
+//   background: #fff;
+//   border: 1px solid #ebe1dc;
+//   border-radius: 4px;
+//   margin-left: 40px;
+//   max-width: 600px !important;
+// }
+.externalSearchButtonWrapper--header-search {
+  border-color: #fff;
+}
+:global(.vtex-modal__modal) {
+  background-color: #fff;
+}
+:global(.vtex-modal-layout-0-x-paperScrollContent) {
+  background-color: transparent;
+}
+.imageElement--icon-list-img {
+  height: 85px;
+}
+.infoCardContainer--info-card-modal-content {
+  background-color: transparent;
+}
+.infoCardHeadline--info-card-modal-content {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: $preto;
+}
+.infoCardSubhead--info-card-modal-content {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #606060;
+  text-align: left;
+  padding: 0 15px;
+}
+.infoCardTextContainer--info-card-modal-content {
+  background-color: #f4f4f4;
+  height: 280px;
+  border-radius: 20px 0 0 20px;
+  @media (max-width: $t) {
+    border-radius: 20px 20px 0 0;
+  }
+}
+.infoCardImage--info-card-modal-content {
+  height: 282px;
+  margin-top: 5px;
+  border-radius: 0 20px 20px 0;
+  @media (max-width: $t) {
+    border-radius: 0 0 20px 20px;
+    margin-top: 0px;
+  }
+}
+.infoCardContainer--info-card-list,
+.infoCardContainer--info-card-list-2 {
+  max-width: 1350px;
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.infoCardImage--info-card-list {
+
+  @media (max-width: $t) {
+    margin-left: 0;
+  }
+}
+.infoCardHeadline--info-card-list {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #1d1d1b;
+  text-align: left;
+  width: 100%;
+  @media (max-width: $t) {
+    text-align: center;
+  }
+}
+.infoCardSubhead--info-card-list {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #606060;
+  text-align: left;
+  width: 100%;
+  @media (max-width: $t) {
+    text-align: center;
+  }
+}
+.infoCardSubhead--info-card-list-2,
+.infoCardHeadline--info-card-list-2 {
+  text-align: right;
+  @media (max-width: $t) {
+    text-align: center;
+  }
+}
+.imageElementLink--img-list-botton {
+  width: 100%;
+  padding: 0 20px;
+  @media (max-width: $t) {
+    padding: 0;
+  }
+}
+.infoCardContainer--info-card-list-2 {
+  margin-top: 50px;
+}
+.container--info-card-list-2 {
+  &:first-child {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    color: #1d1d1b;
+    text-align: left;
+  }
+}
+.paragraph--info-card-list-2 {
+  font-size: 15px;
+}

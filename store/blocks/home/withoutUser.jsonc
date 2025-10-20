@@ -1,0 +1,317 @@
+{
+  "flex-layout.col#home-without-user": {
+    "children": [
+      "flex-layout.row#home-hero-banner",
+      "flex-layout.row#home-selections",
+      "flex-layout.row#search-block",
+      "info-card#lists-1",
+      "info-card#lists-2",
+      "flex-layout.row#img-list-botton",
+      "flex-layout.row#card-3",
+      "flex-layout.col#accordion"
+    ],
+    "props": {
+      "blockClass": ["home-without-user-col", "container"]
+    }
+  },
+
+  "flex-layout.row#home-hero-banner": {
+    "title": "HOME - Banners Principal",
+    "children": ["list-context.image-list#home-hero-banner"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__hero-banners", "container"]
+    }
+  },
+  "list-context.image-list#home-hero-banner": {
+    "title": "HOME - Banner Hero Full",
+    "children": ["slider-layout#home-hero-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/banner-hero-mob-1.png",
+          "image": "assets/images/banner-hero-desk-1.png",
+          "description": "Banner Hero - 1",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "https://via.placeholder.com/360x252",
+          "image": "https://via.placeholder.com/1216x268",
+          "description": "Banner Hero - 2",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "mobileImage": "https://via.placeholder.com/360x252",
+          "image": "https://via.placeholder.com/1216x268",
+          "description": "Banner Hero - 3",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#home-hero-banners": {
+    "title": "HOME - Slider Banners Hero",
+    "props": {
+      "itemsPerPage": 1,
+      "infinite": true,
+      "usePagination": true,
+      "showPaginationDots": "always",
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": ["home__hero-banners"]
+    }
+  },
+
+  //icones lista
+  "flex-layout.row#home-selections": {
+    "title": "HOME - Seleções",
+    "children": ["flex-layout.col#home-selections"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__selections", "container"]
+    }
+  },
+  "flex-layout.col#home-selections": {
+    "children": ["rich-text#home-selections", "flex-layout.row#icon-list"],
+    "props": {
+      "blockClass": ["home-selections"]
+    }
+  },
+  //
+
+  "rich-text#home-selections": {
+    "title": "HOME | Titulo dos icones",
+    "props": {
+      "text": "## listas",
+      "blockClass": ["section-common-title"]
+    }
+  },
+
+  "slider-layout#selections-images": {
+    "title": "CONFIG - Slider Seleções",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 10,
+        "tablet": 5,
+        "phone": 3
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "fullWidth": true,
+      "blockClass": ["home__selection"]
+    }
+  },
+  //!icones lista
+
+  "flex-layout.row#search-block": {
+    "children": [
+      "flex-layout.row#search-list-without-user-1",
+      "flex-layout.row#search-list-without-user-2"
+    ],
+    "props": {
+      "blockClass": ["search-block", "container"]
+    }
+  },
+  "info-card#lists-1": {
+    "props": {
+      "id": "info-card-list",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/images/card-list-1.png",
+      "headline": "listas para todos os momentos",
+      "subhead": "Desde os chás e a cerimônia de casamento até a casa nova, a Lista de Presentes Lojas Mel oferece uma experiência completa para os anfitriões.      Para montar ou renovar o seu lar, crie uma lista de produtos de cozinha, bar, decoração, eletro, móveis e muito mais. Prefere fazer uma viagem incrível? Monte sua lista em dinheiro. Na Lojasmel, encontre tudo que precisa para sua Lista de Presentes em um único lugar.",
+      "textAlignment": "center",
+      "callToActionMode": false,
+      "blockClass": "info-card-list"
+    }
+  },
+  "info-card#lists-2": {
+    "props": {
+      "id": "info-card-list",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/images/card-list-2.png",
+      "headline": "praticidade para você e seus convidados",
+      "subhead": "Crie sua lista no site ou na loja e, posteriormente, seus convidados poderão também escolher lhe presentear comprando online ou em um dos nossos endereços. Caso optem pelas lojas*, eles podem levar o produto pessoalmente ou incluí-lo na sua lista, que posteriormente o resgatará.      *Exceto produtos de Marketplace e Lista Experiencia, que só podem ser comprados pelo site.",
+      "textAlignment": "center",
+      "callToActionMode": false,
+      "blockClass": ["info-card-list", "info-card-list-2"]
+    }
+  },
+  "flex-layout.row#search-list-without-user-1": {
+    "children": ["flex-layout.col#search-list-without-user-1"],
+    "props": {
+      "blockClass": ["search-list-without-user", "container-1"]
+    }
+  },
+  "flex-layout.row#search-list-without-user-2": {
+    "children": ["flex-layout.col#search-list-without-user-2"],
+    "props": {
+      "blockClass": ["search-list-without-user", "container-2"]
+    }
+  },
+  "flex-layout.col#search-list-without-user-1": {
+    "children": [
+      "rich-text#titulo-anfitriao",
+      "rich-text#anfitriao",
+      "search-list",
+      "rich-text#anchor-doubts"
+    ],
+    "props": {
+      "blockClass": ["search-list-col", "search-list-col-1"]
+    }
+  },
+  "flex-layout.col#search-list-without-user-2": {
+    "children": [
+      "rich-text#titulo-convidado",
+      "rich-text#convidado",
+      "search-list"
+    ],
+    "props": {
+      "blockClass": ["search-list-col", "search-list-col-2"]
+    }
+  },
+  "rich-text#titulo-anfitriao": {
+    "title": "Titulo Anfitrião",
+    "props": {
+      "text": "sou anfitrião",
+      "blockClass": ["titulo-anfitriao"]
+    }
+  },
+
+  "rich-text#anfitriao": {
+    "title": "Texto Anfitrião",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tristique arcu, vitae convallis lorem. Curabitur eget augue tristique, congue dolor at, bibendum leo",
+      "blockClass": ["texto-anfitriao"]
+    }
+  },
+  "rich-text#titulo-convidado": {
+    "title": "Titulo Convidado",
+    "props": {
+      "text": "sou convidado",
+      "blockClass": ["titulo-convidado"]
+    }
+  },
+  "rich-text#convidado": {
+    "title": "Texto Convidado",
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tristique arcu, vitae convallis lorem. Curabitur eget augue tristique, congue dolor at, bibendum leo",
+      "blockClass": ["texto-convidado"]
+    }
+  },
+
+  "search-list": {
+    "props": {
+      "buttons": true,
+      "title": false,
+      "blockClass": ["search-bar"]
+    }
+  },
+
+  "rich-text#anchor-doubts": {
+    "props": {
+      "text": "[Como montar a minha lista?](#duvidas)",
+      "blockClass": "anchor-doubts"
+    }
+  },
+
+  "flex-layout.row#img-list-botton": {
+    "title": "HOME - Banners inferior",
+    "children": ["list-context.image-list#img-list-botton"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["home__hero-banners", "container"]
+    }
+  },
+  "list-context.image-list#img-list-botton": {
+    "title": "Banner inferior",
+    "children": ["slider-layout#img-list-botton"],
+    "props": {
+      "blockClass": "img-list-botton",
+
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/banner-hero-mob-1.png",
+          "image": "assets/images/banner-hero-desk-1.png",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#img-list-botton": {
+    "title": "Slider Banner inferior",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": ["img-list-botton"]
+    }
+  },
+  "flex-layout.row#card-3": {
+    "children": [
+      "list-context.image-list#list-card-3",
+      "rich-text#list-card-3"
+    ],
+    "props": {
+      "htmlId": "duvidas",
+      "blockClass": ["card-3", "container"]
+    }
+  },
+  "list-context.image-list#list-card-3": {
+    "title": "Banner inferior",
+    "children": ["slider-layout#list-card-3"],
+    "props": {
+      "blockClass": "list-card-3",
+
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "assets/images/criar-lista.png",
+          "image": "assets/images/criar-lista.png",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#list-card-3": {
+    "title": "Slider Banner inferior",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": ["list-card-3"]
+    }
+  },
+  "rich-text#list-card-3": {
+    "props": {
+      "blockClass": "list-card-3",
+      "text": " ## Como criar a sua lista  de presentes ## \n **1** - Crie sua lista de forma personalizada em nosso site ou em uma de nossas lojas físicas. \n\n **2** - Escolha o tipo de lista: produto, experiência (para resgate em dinheiro) ou ambos. \n\n **3** - Selecione os produtos ou experiências desejados. \n\n[Precisa de ajuda](/)"
+    }
+  },
+
+  "flex-layout.col#accordion": {
+    "title": "Conteúdo - Perguntas Frequentes",
+    "children": ["custom-accordion"],
+    "props": {
+      "blockClass": "accordion"
+    }
+  }
+}

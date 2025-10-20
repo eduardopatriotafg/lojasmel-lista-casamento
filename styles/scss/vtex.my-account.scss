@@ -1,0 +1,389 @@
+@import 'components/variables/all';
+
+:global(.vtex-account) {
+  *,
+  :global(.vtex-input__label),
+  :global(.vtex-input-prefix__groupF) {
+    font-family: $main-font !important;
+  }
+
+  :global(.vtex-dropdown__label),
+  :global(.vtex-input__label) {
+    font-size: $font-size-xs;
+    color: $cinza;
+  }
+}
+
+:global(.vtex-my-account-1-x-userGreeting) {
+  font-size: $font-size-sm;
+}
+
+:global(.vtex-my-account-1-x-userName) {
+  font-size: $font-size-xl;
+  font-weight: $regular;
+}
+
+:global(.vtex-my-account-1-x-userName),
+:global(.vtex-my-account-1-x-userGreeting) {
+  color: $cinza;
+}
+
+:global(.vtex-account_menu-link) {
+  font-size: $font-size-md;
+  color: $cinza;
+}
+:global(.b--action-primary) {
+  background-color: $white;
+  border-color: transparent;
+}
+:global(.vtex-my-account-1-x-dataEntryChildren),
+:global(.vtex-checkbox__label) {
+  font-size: $font-size-sm;
+}
+
+:global(.vtex-my-authentication-1-x-maskedPassword_title),
+:global(.vtex-my-authentication-1-x-loginSessionsBox_title),
+:global(.vtex-account_menu-link):hover,
+:global(.vtex-account_menu-link.c-on-base),
+:global(.vtex-account_menu-link):hover,
+:global(.vtex-pageHeader__title),
+.dataEntryLabel,
+.newsletterContainerTitle {
+  color: $cor-2;
+  font-weight: bold;
+}
+
+:global(.vtex-my-authentication-1-x-maskedPassword_title),
+:global(.vtex-my-authentication-1-x-loginSessionsBox_title),
+.dataEntryLabel {
+  font-size: $font-size-sm;
+}
+
+:global(.vtex-account_menu-link.c-on-base) {
+  border-color: $cor-2;
+}
+
+:global(.vtex-pageHeader__container) {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+:global(.vtex-pageHeader__title) {
+  text-transform: lowercase;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+:global(.bg-action-primary) {
+  background-color: $cor-2 !important;
+  font-weight: $bold;
+  border-color: transparent !important;
+}
+:global(.bg-action-primary):hover {
+  border: 0;
+}
+
+:global(.vtex-account__page-body),
+:global(.vtex-my-authentication-1-x-authenticationScreen_container) {
+  padding-left: 0;
+}
+
+:global(.vtex-account__page) :global(.vtex-button) {
+  display: inline-block !important;
+  color: $cinza;
+  border: 1px solid $cinza;
+  background: $branco;
+  padding: 5px 15px;
+  font-size: $font-size-sm;
+  font-weight: $bold;
+}
+
+:global(.vtex-my-account-1-x-profileEdit .vtex-my-account-1-x-boxContainer) {
+  border: 0;
+}
+
+:global(
+    .vtex-my-account-1-x-profileEdit
+      .vtex-my-account-1-x-boxContainer
+      .vtex-my-account-1-x-boxContainerBody
+  ) {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+:global(.vtex-my-account-1-x-profileEdit .vtex-input__label) {
+  color: $cinza;
+  font-size: $font-size-xs;
+}
+
+:global(.vtex-my-account-1-x-profileEdit .vtex-input) input {
+  height: 40px;
+}
+
+:global(.vtex-pageHeader-link__container .vtex-button) {
+  border: 0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+:global(.vtex-pageHeader-link__container .vtex-button):before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-left: 2px solid $cor-2;
+  border-bottom: 2px solid $cor-2;
+  position: absolute;
+  left: 8px;
+  transform: rotate(45deg);
+  top: 7px;
+}
+
+:global(.vtex-pageHeader-link__container .vtex-button) span {
+  font-size: 0;
+}
+
+:global(.vtex-pageHeader-link__container .vtex-button) span:before {
+  content: 'VOLTAR';
+  font-weight: bold;
+  font-size: $font-size-sm;
+}
+
+:global(.vtex-pageHeader-link__container .vtex-button) svg {
+  display: none;
+}
+
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper .vtex-button) {
+  border: 0;
+  text-align: left;
+  padding: 0;
+  font-size: 12px;
+  color: $cinza;
+  text-decoration: underline;
+  text-transform: unset;
+  width: auto;
+}
+
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper .vtex-button):active,
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper .vtex-button):hover,
+:global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper .vtex-button):focus {
+  background-color: transparent;
+}
+
+:global(.vtex-my-account-1-x-profileEdit .vtex-button[type='submit']) {
+  background-color: $cor-2;
+  border: 0;
+  color: $branco;
+  font-weight: bold;
+  height: 40px;
+}
+
+:global(.vtex-my-cards-1-x-newCardButton .vtex-button) {
+  font-size: 0;
+}
+
+:global(.vtex-my-cards-1-x-newCardButton .vtex-button):hover {
+  background-color: $cor-2;
+  color: $branco;
+  border-color: $cor-2;
+}
+
+:global(.vtex-my-cards-1-x-newCardButton .vtex-button):before {
+  content: 'Novo Cartão';
+  font-size: $font-size-md;
+}
+
+:global(.vtex-my-account-1-x-addressList) > div > div > span,
+:global(.vtex-account__cards-list) > div > div > span > span,
+:global(.vtex-account__orders-list) > div > div > div > span > span {
+  font-size: 16px;
+  color: $cinza;
+  text-align: center;
+  width: 240px;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+:global(.vtex-address-form__postalCode) a,
+:global(.vtex-address-form__postalCode) a:hover {
+  font-size: 12px;
+  color: $cinza;
+  text-decoration: underline;
+}
+
+:global(.vtex-address-form__postalCode)
+  + div
+  + div
+  :global(.vtex-button[type='submit']),
+:global(.vtex-account__create-card .vtex-button[type='submit']):hover {
+  background-color: $cor-2;
+  border-color: $cor-2;
+}
+
+:global(.vtex-address-form__postalCode)
+  + div
+  + div
+  :global(.vtex-button[type='submit'])
+  div {
+  font-size: $font-size-md;
+  color: $branco;
+  font-weight: bold;
+  font-size: 0;
+}
+
+:global(.vtex-address-form__postalCode)
+  + div
+  + div
+  :global(.vtex-button[type='submit'])
+  div:before {
+  content: 'Salvar';
+  font-size: $font-size-md;
+}
+
+:global(.vtex-address-form__postalCode)
+  + div
+  + div
+  :global(.vtex-button[type='submit'])
+  + div
+  button:hover {
+  background-color: transparent !important;
+}
+
+:global(.vtex-address-form__postalCode)
+  + div
+  + div
+  :global(.vtex-button[type='submit'])
+  + div
+  button,
+:global(.vtex-address-form__postalCode)
+  + div
+  + div
+  :global(.vtex-button[type='submit'])
+  + div
+  button:hover {
+  font-size: $font-size-md;
+  color: $cinza;
+  border: 1px solid $cinza;
+}
+
+:global(
+    .vtex-my-authentication-1-x-authenticationScreen_container
+      .vtex_my-authentication_box_footer
+      .vtex-button
+  ):hover {
+  border: 1px solid $cinza;
+}
+
+:global(form .t-heading-4 span) {
+  color: $cor-2;
+  font-size: $font-size-md;
+  font-weight: bold;
+}
+
+:global(.vtex-my-account-1-x-addressCreate .vtex-button[type='button']) {
+  background-color: $cor-2;
+  font-weight: bold;
+  color: $branco;
+  font-size: $font-size-md;
+  border-color: $cor-2;
+}
+
+:global(.vtex-my-account-1-x-addressCreate .vtex-button.c-on-disabled) {
+  cursor: not-allowed;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--search-list-col-1) {
+  div[class*='flex-column'] {
+    display: none;
+  }
+  :global(.mt8) {
+    margin-top: 10px;
+  }
+}
+:global(.vtex-flex-layout-0-x-flexColChild--search-list-col-2) {
+  :global(.flex-row) {
+    div {
+      border-radius: 20px 0 0 20px;
+      border: 0;
+    }
+    button {
+      border-radius: 0 20px 20px 0;
+      border: 0;
+    }
+  }
+}
+:global(.vtex-list-3-x-paragraphAddItensLinkHeader) {
+  :global(.image--primary-button) {
+    display: none;
+  }
+}
+:global(.vtex-list-3-x-emptyList) {
+  :global(.image--primary-button) {
+    filter: hue-rotate(120deg);
+  }
+}
+:global(.vtex-list-3-x-shareListIcon) {
+  :global(img) {
+    filter: hue-rotate(120deg);
+  }
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--list-info-footer) {
+  :global(img) {
+    filter: hue-rotate(120deg);
+  }
+}
+
+// List - Pagination
+:global(.vtex-list-3-x-gallery) {
+  padding-bottom: 50px;
+
+  > div:last-child {
+    left: 0;
+    right: 0;
+    margin: 0 auto -50px !important;
+    width: fit-content;
+  }
+}
+
+// List - Search and Filters
+:global(.vtex-flex-layout-0-x-flexColChild--search-list-item) {
+  :global(.vtex-input-prefix__group) {
+    :global(div.mh2.bw1.bl) {
+      border: 0;
+    }
+
+    :global(.vtex__icon-search) {
+      color: #5E0000;      
+    }
+  }
+}
+
+// Go Back to List
+:global(.vtex-list-3-x-goBackToListLink) {
+  img {
+    display: none;
+  }
+}
+
+// Breadcrumb
+@media screen and ( max-width: $d ) {
+  .vtex-flex-layout-0-x-flexRowContent {
+    .stretchChildrenWidth {
+      & > .flex {
+        padding: 0;
+      }
+
+      .c-muted-1 {
+        span.c-muted-3 {
+          &:first-child {
+            padding: 0;
+          }
+          
+          &:last-child {
+            padding: 0 3px;
+          }
+        }
+      }
+
+    }
+  }
+}

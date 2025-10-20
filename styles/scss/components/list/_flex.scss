@@ -1,0 +1,343 @@
+.flexCol {
+  &--home-selections {
+    width: auto !important;
+    @media (max-width: $t) {
+      width: 100% !important;
+    }
+  }
+
+  &--priceAndQuantity {
+    justify-content: center !important;
+  }
+  
+  &--search-list-col-1,
+  &--search-list-col-2 {
+    display: flex;
+    justify-content: center;
+    min-height: 350px;
+    padding: 0 15px;
+  }
+}
+
+.flexColChild {
+  &--search-list-col-1 {
+    height: auto !important;
+    :global(.vtex-button):first-child {
+      width: 232px;
+      background-color: $cor-2;
+      color: $white;
+      border-radius: 4px;
+      margin-right: 10px;
+      @media (max-width: $t) {
+        margin: 0 0 25px 0;
+      }
+      &:hover {
+        background-color: #9c0404;
+        border: 1px solid $cor-2;
+      }
+    }
+    :global(.vtex-button):last-child {
+      width: 232px;
+      border: 1px solid $cor-2;
+      color: $cor-2;
+      border-radius: 4px;
+      margin-left: 10px;
+      @media (max-width: $t) {
+        margin: 0;
+      }
+      &:hover {
+        background-color: $cor-2;
+        color: $white;
+      }
+    }
+    :global(.vtex-button__label) {
+      margin: 0 auto;
+    }
+  }
+
+  &--search-list-col-2 {
+    height: auto !important;
+  }
+
+  &--productTexts {
+    :global(.vtex-product-summary-2-x-priceContainer) {
+      align-items: center;
+    }
+  }
+
+  &--priceAndQuantity {
+    @media (max-width: 1025px) {
+      min-height: auto;
+      :global(.vtex-product-summary-2-x-priceContainer) {
+        align-items: center;
+      }
+    }
+  }
+
+  &--search-list-col-2 {
+    :global(.vtex-button) {
+      display: none;
+    }
+  }
+
+  &--icon-list-col {
+    margin: 0 auto;
+  }
+
+  &--search-list-item {
+    :global(.vtex-input-prefix__group) {
+      height: 40px;
+      border: 1px solid #EBE1DC;
+      background-color: #FFF;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+      font-size: .875rem;
+      font-weight: 400;
+      line-height: 1;
+    }
+  }
+
+  &--orderBy {
+    width: 100%;
+    display: block;
+
+    @media screen and ( max-width: $d ) {
+      margin: 0 !important;
+    }
+  }
+}
+
+.flexRow {
+  .flexRow--container {
+    max-width: 1350px;
+  }
+  &--header-search {
+    border: none !important;
+    margin-bottom: 20px !important;
+  }
+
+  &--search-list-without-user {
+    margin-top: 36px !important;
+    margin-bottom: 36px !important;
+    display: flex;
+    justify-content: center;
+  }
+  &--icon-list-row {
+    margin: 0 20px;
+    cursor: pointer;
+    min-width: 100px;
+  }
+  .flexRow--container-1 {
+    justify-content: left;
+  }
+  .flexRow--container-2 {
+    justify-content: right;
+  }
+  .flexRow--home__hero-banners {
+    padding: 0;
+  }
+  .flexRow--card-3 {
+    margin-top: 60px;
+    .flexRowContent--container {
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+  }
+}
+
+.flexRowContent {
+  &--container-1 {
+    position: relative;
+    color: $white;
+    background-color: $cor-1;
+    max-width: 640px;
+    min-height: 400px;
+    border-radius: 20px;
+
+    &::after {
+      content: '';
+      width: 107px;
+      height: 106px;
+      margin: 10px;
+      top: 0;
+      right: 0;
+      background-image: url('assets/images/marca-mel.png');
+      position: absolute;
+      @media (max-height: $t) {
+        width: 58px;
+        height: 58px;
+        background-image: url('assets/images/marca-mel-mob.png');
+        background-repeat: no-repeat;
+      }
+    }
+
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      height: 100%;
+    }
+  }
+
+  &--container-2 {
+    position: relative;
+    color: $white;
+    background-color: $cor-2;
+    max-width: 640px;
+    min-height: 400px;
+    border-radius: 20px;
+
+    &::after {
+      content: '';
+      width: 107px;
+      height: 106px;
+      margin: 10px;
+      top: 0;
+      right: 0;
+      background-image: url('assets/images/marca-mel-2.png');
+      position: absolute;
+      @media (max-height: $t) {
+        width: 58px;
+        height: 58px;
+        background-image: url('assets/images/marca-mel-mob-2.png');
+        background-repeat: no-repeat;
+      }
+    }
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+      height: 100%;
+    }
+  }
+
+  &--home__selections-images {
+    overflow-x: auto;
+    padding: 0;
+
+    @media (max-width: $d) {
+      gap: 16px;
+      max-height: 110px;
+    }
+
+    &::-webkit-scrollbar {
+      opacity: 0;
+    }
+
+    .stretchChildrenWidth {
+      flex: 1;
+      min-width: 80px;
+      height: min-content;
+
+      @media (min-width: $d) {
+        min-width: initial;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-imageElementLink) {
+      @extend %hoverOpacity;
+    }
+  }
+
+  &--icon-list {
+    display: flex;
+    overflow: auto;
+  }
+
+  &--modal-content {
+    max-width: 666px;
+    background-color: transparent;
+  }
+
+  &--disclosure-group {
+    margin-top: 50px;
+  }
+
+  &--breadcrumb {
+    text-transform: capitalize;
+  }
+
+  &--edit-list {
+    :global(.vtex-button) {
+      display: flex;
+      align-items: center;
+      gap: 0 5px;
+      padding: 0 10px;
+      min-height: 0;
+      background-color: transparent !important;
+      font-size: .875rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: #bd1d1d;
+
+      &:hover {
+        color: #bd1d1d;
+      }
+      
+      &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-image:url('https://listalojasmel.vtexassets.com/_v/public/assets/v1/published/vtex.list@3.6.2/public/react/c4ec8a9b93a593e665b08cdd1d1ef2ed.svg');
+        background-size: contain;
+        filter: hue-rotate(120deg);
+        display: block;
+        position: relative;
+        top: -2px;
+      }
+    }
+
+    :global(.vtex-button__label) {
+      padding: 0;
+      line-height: 1;
+    }
+  }
+
+  &--tools {
+    display: grid !important;
+    grid-template-columns: 75% 120px 100px !important;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #FAFAFA !important;
+    border-bottom: 1px solid #FAFAFA !important;
+
+    @media screen and ( max-width: $d ) {
+      display: block !important;
+    }
+  }
+
+  &--tools-ownerList {
+    @media screen and ( max-width: $d ) {
+      display: flex !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+      flex-wrap: wrap;
+      gap: 15px 0;
+    }
+  }
+
+  &--tools-wrapper {
+    display: grid !important;
+    grid-template-columns: 1fr 19% !important;
+    gap: 0 36px;
+
+    .stretchChildrenWidth {
+      &:first-child {
+        order: 2;
+      }
+    }
+  }
+
+  &--list-info-footer {
+    @media screen and ( max-width: $d ) {
+      display: grid !important;
+      grid-template-columns: minmax(73%, 1fr) 27%;
+      gap: 20px 0;
+    }
+  }
+
+  &--owner-and-date {
+    @media screen and ( max-width: $d ) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .stretchChildrenWidth {
+    width: 100% !important;
+  }
+}

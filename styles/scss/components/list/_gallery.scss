@@ -1,0 +1,32 @@
+:global(.vtex-search-result-3-x-gallery--galleryContainer) {
+  @media (min-width: 64em) {
+    grid-template-columns: 1fr 1fr 1fr !important ;
+  }
+}
+
+.owner-list {
+  margin-bottom: 50px;
+}
+
+.galleryItem--list-items-mobile {
+  width: auto !important;
+}
+
+.gallery--list-items-mobile{
+  justify-content: center;
+}
+
+.gallery {
+  &--owner-list,
+  &--guest {
+    gap: 0 2.66%;
+  }
+}
+
+.galleryItem {
+  &--owner-list,
+  &--guest {
+    width: 23% !important;
+    max-width: 300px;
+  }
+}

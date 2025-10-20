@@ -1,0 +1,17 @@
+.flexColChild {
+  :global(.vtex-dropdown__button) {
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+  }
+
+  :global(.vtex-dropdown__caption) {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #606060;
+    text-transform: capitalize;
+  }
+}

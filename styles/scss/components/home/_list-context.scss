@@ -1,0 +1,60 @@
+.list {
+  &--list-cards-example {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
+
+    @media (min-width: $d) {
+      row-gap: 24px;
+    }
+
+    .infoCardImage {
+      height: 100%;
+      width: 100%;
+      display: block;
+    }
+
+    .infoCardContainer {
+      border-radius: 8px;
+      padding: 0;
+
+      @media (max-width: 640px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    .infoCardTextContainer {
+      padding: 32px;
+
+      @media (min-width: $d) {
+        padding-left: 42px;
+        padding-right: 42px;
+      }
+    }
+
+    .infoCardHeadline {
+      font-size: $font-size-xl;
+      font-family: $main-font;
+      color: $cor-2;
+      margin: 0 0 14px 0;
+      padding: 0;
+
+      @media (min-width: $d) {
+        margin: 0 0 24px 0;
+      }
+    }
+
+    .infoCardSubhead {
+      color: $cinza;
+      font-size: $font-size-sm;
+      font-family: $main-font;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

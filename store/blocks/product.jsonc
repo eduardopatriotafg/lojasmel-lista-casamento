@@ -1,0 +1,39 @@
+{
+  "store.product": {
+    "children": [
+      "disposition-layout#product"
+    ]
+  },
+
+  "disposition-layout#product": {
+    "title": "PRODUTO | Disposição do Conteudo",
+    "children": [
+
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        }
+      ]
+    }
+  }
+}

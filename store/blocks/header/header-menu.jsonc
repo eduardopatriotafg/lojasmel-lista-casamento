@@ -1,0 +1,128 @@
+{
+  "menu#top-navbar-link": {
+    "children": [
+      "menu-item#attendance",
+      "menu-item#doubts",
+      "menu-item#credit-policies"
+    ],
+    "props": {
+      "blockClass": "top-navbar-link"
+    }
+  },
+  "menu-item#credit-policies": {
+    "props": {
+      "id": "menu-item-credit-policies",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Politica de Créditos",
+        "text": "Politica de Créditos"
+      }
+    }
+  },
+  "menu-item#attendance": {
+    "props": {
+      "id": "menu-item-attendance",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    }
+  },
+  "menu-item#doubts": {
+    "props": {
+      "id": "menu-item-doubts",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Dúvidas",
+        "text": "Dúvidas"
+      }
+    }
+  },
+  "auth-condition#header-menu": {
+    "props": {
+      "Then": "menu#bottom-navbar-link"
+    }
+  },
+  "menu#bottom-navbar-link": {
+    "children": ["menu-item#my-list", "create-or-edit-list-modal#menu"],
+    "props": {
+      "blockClass": "bottom-navbar-link-action"
+    }
+  },
+  "menu-item#my-list": {
+    "props": {
+      "id": "menu-item-my-list",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Minha lista",
+        "text": "Minha Lista"
+      },
+      "iconProps": {
+        "id": "my-list",
+        "size": 16,
+        "viewBox": "0 0 21 19"
+      }
+    }
+  },
+  "menu-item#create-list": {
+    "props": {
+      "id": "menu-item-create-list",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Criar lista 11",
+        "text": "Criar Lista"
+      },
+      "iconProps": {
+        "id": "add",
+        "size": 16,
+        "viewBox": "0 0 14 20"
+      }
+    }
+  },
+
+  "menu#actionaccess": {
+    "children": ["login", "minicart.v2"],
+    "props": {
+      "blockClass": "top-navbar-link-action"
+    }
+  },
+  "login": {
+    "props": {
+      "blockClass": "login-topbar",
+      "iconLabel": "Entrar",
+      "showIconProfile": true
+    }
+  },
+  "logo": {
+    "props": {
+      "blockClass": ["header-bottom-bar-logo", "justify-content-start-end"],
+      "url": "assets/Logo.png",
+      "href": "/"
+    }
+  },
+  "create-or-edit-list-modal#menu": {
+    "props":{
+      "useButton": false
+    }
+  }
+}

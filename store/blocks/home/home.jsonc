@@ -1,0 +1,43 @@
+{
+  "store.home": {
+    "blocks": ["auth-condition#search-list"],
+    "parent": { "storeWrapper": "storeWrapper#home" }
+  },
+
+  "auth-condition#search-list": {
+    "props": {
+      "Then": "flex-layout.row#home-with-user",
+      "Else": "flex-layout.row#home-without-user"
+    }
+  },
+
+  // "auth-condition#breadcrumbs": {
+  //   "props": {
+  //     "Then": "flex-layout.row#breadcrumbs"
+  //   }
+  // },
+  // "flex-layout.row#breadcrumbs": {
+  //   "children": ["breadcrumbs"],
+  //   "props": {
+  //     "blockClass": ["container"]
+  //   }
+  // },
+  
+  /* With User*/
+  "flex-layout.row#home-with-user": {
+    "children": ["flex-layout.col#home-with-user-col"],
+    "props": {
+      "blockClass": "home-with-user"
+    }
+  },
+
+  /* Without User */
+  "flex-layout.row#home-without-user": {
+    "children": ["flex-layout.col#home-without-user"],
+    "props": {
+      "blockClass": "home-without-user"
+    }
+  }
+
+  /* !Without User */
+}

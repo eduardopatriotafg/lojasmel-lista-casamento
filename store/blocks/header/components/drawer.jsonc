@@ -1,0 +1,556 @@
+{
+  "drawer#menu": {
+    "title": "Menu - Drawer",
+    "children": ["flex-layout.row#drawer-main-menu"],
+    "blocks": ["drawer-header#menu"],
+    "props": {
+      "blockClass": ["mainMenuHeader"]
+    }
+  },
+  "drawer-header#menu": {
+    "children": [
+      "drawer-close-button",
+      "flex-layout.col#drawer--container-right"
+    ],
+    "props": {
+      "blockClass": ["mainMenuHeader"]
+    }
+  },
+  "flex-layout.col#drawer--container-right": {
+    "title": "",
+    "children": ["flex-layout.row#drawer--container-right-content"],
+    "props": {
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "blockClass": ["mainMenuHeader"]
+    }
+  },
+  "flex-layout.row#drawer--container-right-content": {
+    "children": ["link#drawer-login", "link#drawer-localization"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": ["mainMenuLinksHeader"]
+    }
+  },
+  "link#drawer-login": {
+    "title": "Login",
+    "props": {
+      "href": "/account",
+      "label": "Minha conta",
+      "blockClass": "drawerLogin"
+    }
+  },
+  "link#drawer-localization": {
+    "title": "Localização Lojas",
+    "props": {
+      "href": "/nossas-lojas",
+      "label": "Nossas lojas",
+      "blockClass": "drawerLocalization"
+    }
+  },
+  "flex-layout.row#drawer-main-menu": {
+    "children": ["flex-layout.col#mainMenuHeader"],
+    "props": {
+      "blockClass": "mainMenuHeader"
+    }
+  },
+  "flex-layout.col#mainMenuHeader": {
+    "children": [
+      "drawer#menuItem1",
+      "drawer#menuItem2",
+      "drawer#menuItem3",
+      "drawer#menuItem4",
+      "drawer#menuItem5",
+      "drawer#menuItem6",
+      "drawer#menuItem7",
+      "drawer#menuItem8",
+      "drawer#menuItem9",
+      "drawer#menuItem10",
+      "drawer#menuItem11",
+      "drawer#menuItem12",
+      "drawer#menuItem13",
+      "drawer#menuItem14",
+      "drawer#menuItem15",
+      "drawer#menuItem16"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "mainMenuHeaderDrawer"
+    }
+  },
+  //ITEMS DO MENU
+  "drawer#menuItem1": {
+    "children": ["menu#menuItem1"],
+    "blocks": ["drawer-header#menuItem1", "drawer-trigger#menuItem1"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem1": {
+    "children": ["drawer-close-button"],
+    "props": {
+      "blockClass": "submenuHeaderTitle"
+    }
+  },
+  "drawer-close-button": {
+    "props": {
+      "text": "VOLTAR"
+    }
+  },
+  "drawer-trigger#menuItem1": {
+    "children": ["rich-text#menuItem1", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem1": {
+    "title": "Menu  - Drawer - Item 1",
+    "props": {
+      "text": "Utilidades Domésticas",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "icon-caret#nav-caret--right": {
+    "props": {
+      "orientation": "right"
+    }
+  },
+  "menu#menuItem1": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem2": {
+    "children": ["menu#menuItem2"],
+    "blocks": ["drawer-header#menuItem2", "drawer-trigger#menuItem2"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem2": {
+    "children": ["drawer-close-button", "rich-text#menuItem2"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem2": {
+    "children": ["rich-text#menuItem2", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem2": {
+    "title": "Menu  - Drawer - Item 2",
+    "props": {
+      "text": "Eletroportáteis",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem2": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem3": {
+    "children": ["menu#menuItem3"],
+    "blocks": ["drawer-header#menuItem3", "drawer-trigger#menuItem3"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem3": {
+    "children": ["drawer-close-button", "rich-text#menuItem3"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem3": {
+    "children": ["rich-text#menuItem3", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem3": {
+    "title": "Menu  - Drawer - Item 3",
+    "props": {
+      "text": "Decoração",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem3": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem4": {
+    "children": ["menu#menuItem4"],
+    "blocks": ["drawer-header#menuItem4", "drawer-trigger#menuItem4"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem4": {
+    "children": ["drawer-close-button", "rich-text#menuItem4"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem4": {
+    "children": ["rich-text#menuItem4", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem4": {
+    "title": "Menu  - Drawer - Item 4",
+    "props": {
+      "text": "Elétrica e iluminação",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem4": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem5": {
+    "children": ["menu#menuItem5"],
+    "blocks": ["drawer-header#menuItem5", "drawer-trigger#menuItem5"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem5": {
+    "children": ["drawer-close-button", "rich-text#menuItem5"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem5": {
+    "children": ["rich-text#menuItem5", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem5": {
+    "title": "Menu  - Drawer - Item 5",
+    "props": {
+      "text": "Ferragens e Segurança",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem5": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem6": {
+    "children": ["menu#menuItem6"],
+    "blocks": ["drawer-header#menuItem6", "drawer-trigger#menuItem6"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem6": {
+    "children": ["drawer-close-button", "rich-text#menuItem6"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem6": {
+    "children": ["rich-text#menuItem6", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem6": {
+    "title": "Menu  - Drawer - Item 6",
+    "props": {
+      "text": "Ferramentas",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem6": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem7": {
+    "children": ["menu#menuItem7"],
+    "blocks": ["drawer-header#menuItem7", "drawer-trigger#menuItem7"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem7": {
+    "children": ["drawer-close-button", "rich-text#menuItem7"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem7": {
+    "children": ["rich-text#menuItem7", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem7": {
+    "title": "Menu  - Drawer - Item 7",
+    "props": {
+      "text": "Hidráulica e construção",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem7": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem8": {
+    "children": ["menu#menuItem8"],
+    "blocks": ["drawer-header#menuItem8", "drawer-trigger#menuItem8"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem8": {
+    "children": ["drawer-close-button", "rich-text#menuItem8"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem8": {
+    "children": ["rich-text#menuItem8", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem8": {
+    "title": "Menu  - Drawer - Item 8",
+    "props": {
+      "text": "Brinquedos",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem8": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem9": {
+    "children": ["menu#menuItem9"],
+    "blocks": ["drawer-header#menuItem9", "drawer-trigger#menuItem9"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem9": {
+    "children": ["drawer-close-button", "rich-text#menuItem9"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem9": {
+    "children": ["rich-text#menuItem9", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem9": {
+    "title": "Menu  - Drawer - Item 9",
+    "props": {
+      "text": "Cama, mesa e banho",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem9": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem10": {
+    "children": ["menu#menuItem10"],
+    "blocks": ["drawer-header#menuItem10", "drawer-trigger#menuItem10"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem10": {
+    "children": ["drawer-close-button", "rich-text#menuItem10"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem10": {
+    "children": ["rich-text#menuItem10", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem10": {
+    "title": "Menu  - Drawer - Item 10",
+    "props": {
+      "text": "Eletrônicos, áudio e vídeo",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem10": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem11": {
+    "children": ["menu#menuItem11"],
+    "blocks": ["drawer-header#menuItem11", "drawer-trigger#menuItem11"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem11": {
+    "children": ["drawer-close-button", "rich-text#menuItem11"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem11": {
+    "children": ["rich-text#menuItem11", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem11": {
+    "title": "Menu  - Drawer - Item 11",
+    "props": {
+      "text": "Informática",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem11": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem12": {
+    "children": ["menu#menuItem12"],
+    "blocks": ["drawer-header#menuItem12", "drawer-trigger#menuItem12"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem12": {
+    "children": ["drawer-close-button", "rich-text#menuItem12"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem12": {
+    "children": ["rich-text#menuItem12", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem12": {
+    "title": "Menu  - Drawer - Item 12",
+    "props": {
+      "text": "Beleza, moda e saúde",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem12": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem13": {
+    "children": ["menu#menuItem13"],
+    "blocks": ["drawer-header#menuItem13", "drawer-trigger#menuItem13"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem13": {
+    "children": ["drawer-close-button", "rich-text#menuItem13"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem13": {
+    "children": ["rich-text#menuItem13", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem13": {
+    "title": "Menu  - Drawer - Item 13",
+    "props": {
+      "text": "Papelaria",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem13": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem14": {
+    "children": ["menu#menuItem14"],
+    "blocks": ["drawer-header#menuItem14", "drawer-trigger#menuItem14"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem14": {
+    "children": ["drawer-close-button", "rich-text#menuItem14"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem14": {
+    "children": ["rich-text#menuItem14", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem14": {
+    "title": "Menu  - Drawer - Item 14",
+    "props": {
+      "text": "Pet shop",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem14": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem15": {
+    "children": ["menu#menuItem15"],
+    "blocks": ["drawer-header#menuItem15", "drawer-trigger#menuItem15"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem15": {
+    "children": ["drawer-close-button", "rich-text#menuItem15"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem15": {
+    "children": ["rich-text#menuItem15", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem15": {
+    "title": "Menu  - Drawer - Item 15",
+    "props": {
+      "text": "Alimentos e bebidas",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem15": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "drawer#menuItem16": {
+    "children": ["menu#menuItem16"],
+    "blocks": ["drawer-header#menuItem16", "drawer-trigger#menuItem16"],
+    "props": {
+      "blockClass": "mainMenuHeaderItem"
+    }
+  },
+  "drawer-header#menuItem16": {
+    "children": ["drawer-close-button", "rich-text#menuItem16"],
+    "props": {
+      "blockClass": "submenuHeader"
+    }
+  },
+  "drawer-trigger#menuItem16": {
+    "children": ["rich-text#menuItem16", "icon-caret#nav-caret--right"]
+  },
+  "rich-text#menuItem16": {
+    "title": "Menu  - Drawer - Item 16",
+    "props": {
+      "text": "Marcas",
+      "blockClass": "headerMenuItem"
+    }
+  },
+  "menu#menuItem16": {
+    "children": ["menu#drawer"],
+    "props": {
+      "orientation": "vertical"
+    }
+  }
+}

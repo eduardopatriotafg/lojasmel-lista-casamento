@@ -1,2 +1,3 @@
-# lojasmel-lista-casamento
-Lista de casamento Vtex de lojas mel
+# Lojas Mel
+
+Lista de casamento de Lojas Mel

@@ -1,0 +1,12 @@
+.container--layout{
+    @extend %container;
+    padding-bottom: 56px;
+    padding: 0!important;
+}
+
+.spinnerError {
+    &--owner-list {
+        display: flex;
+        justify-content: center;
+    }
+}

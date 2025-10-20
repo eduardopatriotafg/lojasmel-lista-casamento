@@ -1,0 +1,42 @@
+.nameContainer {
+  white-space: break-spaces;
+}
+
+.nameContainer--title {
+  max-height: 80px;
+}
+
+.productNameContainer {
+  margin: 0 auto;
+  max-width: 200px;
+  white-space: break-spaces !important;
+}
+
+.priceContainer {
+  // height: auto !important;
+  margin: 0 auto;
+  text-align: center !important;
+  justify-content: flex-start !important;
+}
+
+.brandName--title {
+  text-align: center;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: $bold;
+}
+
+.price_installmentContainer {
+  color: $preto!important;
+}
+
+.price_installmentContainer--Price {
+  display: none;
+}
+
+.element--showcase {
+  border: 0 !important;
+  margin-bottom: 30px;
+}
+

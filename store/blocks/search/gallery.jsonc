@@ -1,0 +1,33 @@
+{
+  "gallery#desktop": {
+    "props": {
+      "blockClass": "galleryContainer",
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "desktop": 3
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#desktopShowcase"
+    }
+  },
+  "gallery#mobile": {
+    "props": {
+      "blockClass": "galleryContainerMob",
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "tablet": 2,
+            "phone": 1
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#mobileShowcase"
+    }
+  }
+}

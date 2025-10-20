@@ -1,0 +1,11 @@
+{
+
+  "add-to-cart-button-list": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "list-add-to-cart-button",
+      "blockClass": "addToCartList"
+    }
+  }
+  
+}

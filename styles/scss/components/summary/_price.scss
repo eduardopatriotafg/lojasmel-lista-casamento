@@ -1,0 +1,52 @@
+.listPriceValue {
+  font-size: $font-size-xs;
+  font-family: $main-font;
+  color: $cinza;
+
+  @media (min-width: $d) {
+    font-size: $font-size-sm;
+  }
+}
+
+.sellingPriceValue {
+  font-family: $main-font;
+
+  &--Price {
+    line-height: 1 !important;
+  }
+
+  .currencyContainer {
+    font-size: $font-size-xl;
+    color: $preto;
+    font-weight: $bold;
+
+    @media (min-width: $d) {
+      font-size: $font-size-xxl;
+    }
+  }
+}
+
+.installments--summary {
+  font-size: $font-size-xs;
+  color: $cinza;
+  margin: 8px 0px;
+
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+  &:not(:empty) {
+    &::before {
+      content: '';
+      height: 18px;
+      width: 22px;
+      background: url(assets/svg/icon-card.svg) no-repeat center;
+      background-size: cover;
+      margin-right: 3px;
+    }
+  }
+}
+
+.savings--product__savingPricePercentage {
+  @extend %flag-discount;
+}

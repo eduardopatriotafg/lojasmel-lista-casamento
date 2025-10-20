@@ -1,0 +1,71 @@
+.flexRow {
+  &--summary__prices-and-button {
+    padding: 0 6px;
+  }
+}
+
+.flexRowContent {
+  &--summary__price {
+    height: 99px;
+    .flexColChild {
+      display: flex;
+    }
+  }
+
+  &--product__highlight {
+    :global(.vtex-product-highlights-2-x-productHighlightWrapper),
+    :global(.vtex-product-highlights-2-x-productHighlightText) {
+      display: none;
+
+      &[data-highlight-name="Frete Grátis"] {
+        display: flex !important;
+        width: 100%;
+      }
+    }
+
+    :global(.vtex-product-highlights-2-x-productHighlightText) {
+      font-size: $font-size-sm;
+      font-weight: $bold;
+      font-family: $main-font;
+
+      &[data-highlight-name="Frete Grátis"] {
+        align-items: center;
+        justify-content: center;
+        color: $branco;
+        text-transform: uppercase;
+        font-size: $font-size-sm;
+
+        background-color: $cor-2;
+        height: 20px;
+        border-radius: 7px;
+        padding-top: 2px;
+
+        &::after {
+          content: "para SP Capital";
+          font-size: $font-size-xs;
+          font-weight: $regular;
+          font-family: $main-font;
+          text-transform: initial;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+}
+
+.flexCol {
+  &--priceAndQuantity {
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: 0;
+    gap: 15px 0;
+  }
+}
+
+.flexColChild {
+  &--priceAndQuantity {
+    width: 100%;
+    height: auto !important;
+    justify-content: flex-start !important;
+  }
+}

@@ -1,0 +1,136 @@
+.emptyList {
+  justify-content: center;
+}
+.paragraph--owner-list,
+.paragraph--guest {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: $cinza;
+  margin-bottom: 50px;
+}
+
+.addToListButtonContainer--button .vtex-button {
+  background-color: $cor-2 !important;
+}
+
+.goBackToListContainer {
+  justify-content: flex-end;
+}
+
+.goBackToListLink {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $cor-2;
+  text-decoration: underline;
+
+  &::before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDkgMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTcuNSAxNS41TDAgOEw3LjUgMC41TDguNTUgMS41Njg3NUwyLjExODc1IDhMOC41NSAxNC40MzEyTDcuNSAxNS41WiIgZmlsbD0iI0Q3MzgzOCIvPjwvc3ZnPg==');
+    width: 10px;
+    height: 15px;
+    margin-right: 17.45px;
+    display: inline-block;
+  }
+}
+
+.galleryItem:last-child {
+  margin-bottom: 50px;
+}
+
+.galleryItem--list-items-mobile {
+  padding: 0;
+}
+
+.quantitySelectorStepper {
+  :global(.vtex-numeric-stepper-container) {
+    justify-content: space-between;
+  }
+}
+
+.linkAddItensLinkHeader {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $cinza !important;
+  text-transform: capitalize;
+  line-height: 1;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $cinza;
+    display: block;
+  }
+}
+
+.addToListButtonContainer--button {
+  :global(.vtex-button) {
+    background-color: $cor-2 !important;
+    filter: hue-rotate(131deg);
+  }
+}
+
+.wrapperAddItensLink {
+  background-color: $cor-2 !important;
+  border-color: $cor-2 !important;
+  &:hover {
+    background-color: $cor-2 !important;
+    border-color: $cor-2 !important;
+  }
+}
+
+.ShareListIcon {
+  position: relative;
+  &::after {
+    content: 'Compartilhe sua lista';
+    color: $cor-2;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 7px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.shareListNotification {
+  position: relative;
+}
+
+.carouselGaleryThumbs {
+  visibility: hidden;
+}
+
+.swiperCaretPrev {
+  top: 48%;
+  .caretIcon {
+    width: 18px;
+    height: 30px;
+  }
+}
+
+.userListText {
+  &::after {
+    content: "Clique a lista para adicionar os presentes";
+    font-size: 12px;
+    font-weight: 400;
+    color: #101010;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+.quantitySelectorContainer {
+  margin-bottom: 0;
+}
+
+:global(.vtex-numeric-stepper-container) {
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #cacbcc!important;
+  border-radius: 5px;
+}
+
+.textGilfted {
+  margin: 10px auto 0;
+}

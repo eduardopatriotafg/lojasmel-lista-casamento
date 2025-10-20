@@ -1,0 +1,126 @@
+.container--confirmation__title {
+  justify-content: center;
+}
+.container--confirmation__button {
+  justify-content: center;
+}
+.link--confirmation__button {
+  color: $cor-2;
+}
+.paragraph--titulo-anfitriao {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px !important;
+  color: $cor-2 !important;
+}
+.paragraph--titulo-convidado {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px !important;
+  color: $cor-1 !important;
+}
+.paragraph--texto-anfitriao {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size-sm !important;
+  line-height: 18px !important;
+  color: $white !important;
+  margin: 20px 0 !important;
+}
+.paragraph--texto-convidado {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size-sm !important;
+  line-height: 18px !important;
+  color: $white !important;
+  margin: 20px 0 !important;
+}
+.paragraph--icon-list-text {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px !important;
+  text-align: center;
+  color: $black;
+  margin-top: 10px !important;
+}
+.wrapper--list-card-3 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .heading-level-2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    color: #1d1d1b;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '';
+      background-image: url('assets/images/icone-presente.png');
+      display: inline-block;
+      width: 55px;
+      height: 38px;
+
+      background-repeat: no-repeat;
+    }
+  }
+  .paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $black;
+    margin: 15px 0;
+  }
+  .link {
+    text-decoration: none;
+    color: $cor-2;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '';
+      background-image: url('assets/images/icone-ajuda.png');
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+    }
+  }
+}
+.paragraph--bottonMenuTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #606060;
+}
+.container--bottonMenuText {
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  margin: 15px auto;
+  justify-content: space-between;
+}
+
+.link {
+  &--btn-back-to-lists {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $cor-2;
+    margin-top: 10px;
+    display: block;
+
+    @media screen and ( max-width: $d ) {
+      margin-top: 5px;
+    }
+  }
+}

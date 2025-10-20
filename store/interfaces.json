@@ -1,0 +1,9 @@
+{
+  "custom-accordion": {
+    "component": "Accordion"
+  },
+
+  "minicart-handler": {
+    "component": "MinicartHandler"
+  }
+}

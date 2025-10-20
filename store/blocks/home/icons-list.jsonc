@@ -1,0 +1,320 @@
+{
+  "flex-layout.row#icon-list": {
+    "title": "Tipo de listas",
+    "children": [
+      "flex-layout.row#icon-list-1",
+      "flex-layout.row#icon-list-2",
+      "flex-layout.row#icon-list-3",
+      "flex-layout.row#icon-list-4",
+      "flex-layout.row#icon-list-5"
+    ],
+    "props": { "blockClass": "icon-list" }
+  },
+  //icon 1
+  "flex-layout.row#icon-list-1": {
+    "title": "Tipo de listas 1",
+    "children": ["modal-trigger#icon-list-1"],
+    "props": { "blockClass": "icon-list-row" }
+  },
+  "flex-layout.col#icon-list-1": {
+    "title": "Tipo de listas 1",
+    "children": ["image#icon-list-1", "rich-text#icon-list-1"],
+    "props": {
+      "blockClass": "icon-list-col"
+    }
+  },
+  "image#icon-list-1": {
+    "title": "Icone",
+    "props": {
+      "src": "assets/svg/icon-casa.svg",
+      "blockClass": "icon-list-img"
+    }
+  },
+  "rich-text#icon-list-1": {
+    "title": "Texto",
+    "props": {
+      "text": "chá de \ncasa nova",
+      "blockClass": "icon-list-text"
+    }
+  },
+  //modal
+  "modal-trigger#icon-list-1": {
+    "title": "Modal",
+    "children": ["flex-layout.col#icon-list-1", "modal-layout#icon-list-1"]
+  },
+
+  "modal-layout#icon-list-1": {
+    "title": "Modal",
+    "children": [
+      "modal-actions.close",
+      "flex-layout.row#modal-content-1"
+    ]
+  },
+  "flex-layout.row#modal-content-1": {
+    "title": "Conteudo modal",
+    "children": [
+      "info-card#modal-content-1"
+    ],
+    "props": {
+      "blockClass": "modal-content"
+    }
+  },
+  "info-card#modal-content-1": {
+    "title": "Info card conteudo",
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/images/casa-nova.png",
+      "headline": "chá de casa nova",
+      "subhead": "Diferente dos outros eventos, o Chá de casa nova não é exclusivo para noivos. Ele celebra o início de uma nova fase como mudança de casa, a decisão de morar sozinho. Além da comemoração, o evento ainda ajuda a arrecadar os utensílios necessários.",
+      "textAlignment": "center",
+      "callToActionMode": false,
+      "blockClass": "info-card-modal-content"
+    }
+  },
+
+  // icon 2
+
+  "flex-layout.row#icon-list-2": {
+    "title": "Tipo de listas 1",
+    "children": ["modal-trigger#icon-list-2"],
+    "props": { "blockClass": "icon-list-row" }
+  },
+  "flex-layout.col#icon-list-2": {
+    "title": "Tipo de listas 1",
+    "children": ["image#icon-list-2", "rich-text#icon-list-2"],
+    "props": { "blockClass": "icon-list-col" }
+  },
+  "image#icon-list-2": {
+    "title": "Icone",
+    "props": {
+      "src": "assets/svg/icon-cozinha.svg",
+      "blockClass": "icon-list-img"
+    }
+  },
+  "rich-text#icon-list-2": {
+    "title": "Texto",
+    "props": {
+      "text": "chá de cozinha e panela",
+      "blockClass": "icon-list-text"
+    }
+  },
+  //modal
+  "modal-trigger#icon-list-2": {
+    "title": "Modal",
+    "children": ["flex-layout.col#icon-list-2", "modal-layout#icon-list-2"]
+  },
+
+  "modal-layout#icon-list-2": {
+    "title": "Modal",
+    "children": [
+      "modal-actions.close",
+      "flex-layout.row#modal-content-2"
+    ]
+  },
+  "flex-layout.row#modal-content-2": {
+    "title": "Conteudo modal",
+    "children": ["info-card#modal-content-2"],
+    "props": {
+      "blockClass": "modal-content"
+    }
+  },
+  "info-card#modal-content-2": {
+    "title": "Info card conteudo",
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/images/casa-nova.png",
+      "headline": "chá de casa nova",
+      "subhead": "Diferente dos outros eventos, o Chá de casa nova não é exclusivo para noivos. Ele celebra o início de uma nova fase como mudança de casa, a decisão de morar sozinho. Além da comemoração, o evento ainda ajuda a arrecadar os utensílios necessários.",
+      "textAlignment": "center",
+      "callToActionMode": false,
+      "blockClass": "info-card-modal-content"
+    }
+  },
+
+  // icon 3
+
+  "flex-layout.row#icon-list-3": {
+    "title": "Tipo de listas 1",
+    "children": ["modal-trigger#icon-list-3"],
+    "props": { "blockClass": "icon-list-row" }
+  },
+  "flex-layout.col#icon-list-3": {
+    "title": "Tipo de listas 1",
+    "children": ["image#icon-list-3", "rich-text#icon-list-3"],
+    "props": { "blockClass": "icon-list-col" }
+  },
+  "image#icon-list-3": {
+    "title": "Icone",
+    "props": {
+      "src": "assets/svg/icon-casamento.svg",
+      "blockClass": "icon-list-img"
+    }
+  },
+  "rich-text#icon-list-3": {
+    "title": "Texto",
+    "props": {
+      "text": "lista de casamento",
+      "blockClass": "icon-list-text"
+    }
+  },
+  //modal
+  "modal-trigger#icon-list-3": {
+    "title": "Modal",
+    "children": ["flex-layout.col#icon-list-3", "modal-layout#icon-list-3"]
+  },
+
+  "modal-layout#icon-list-3": {
+    "title": "Modal",
+    "children": [
+      "modal-actions.close",
+      "flex-layout.row#modal-content-3"
+  ]
+  },
+  "flex-layout.row#modal-content-3": {
+    "title": "Conteudo modal",
+    "children": ["info-card#modal-content-3"],
+    "props": {
+      "blockClass": "modal-content"
+    }
+  },
+  "info-card#modal-content-3": {
+    "title": "Info card conteudo",
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/images/casa-nova.png",
+      "headline": "chá de casa nova",
+      "subhead": "Diferente dos outros eventos, o Chá de casa nova não é exclusivo para noivos. Ele celebra o início de uma nova fase como mudança de casa, a decisão de morar sozinho. Além da comemoração, o evento ainda ajuda a arrecadar os utensílios necessários.",
+      "textAlignment": "center",
+      "callToActionMode": false,
+      "blockClass": "info-card-modal-content"
+    }
+  },
+
+  // icon 4
+
+  "flex-layout.row#icon-list-4": {
+    "title": "Tipo de listas 1",
+    "children": ["modal-trigger#icon-list-4"],
+    "props": { "blockClass": "icon-list-row" }
+  },
+  "flex-layout.col#icon-list-4": {
+    "title": "Tipo de listas 1",
+    "children": ["image#icon-list-4", "rich-text#icon-list-4"],
+    "props": { "blockClass": "icon-list-col" }
+  },
+  "image#icon-list-4": {
+    "title": "Icone",
+    "props": {
+      "src": "assets/svg/icon-bar.svg",
+      "blockClass": "icon-list-img"
+    }
+  },
+  "rich-text#icon-list-4": {
+    "title": "Texto",
+    "props": {
+      "text": "chá bar",
+      "blockClass": "icon-list-text"
+    }
+  },
+  //modal
+  "modal-trigger#icon-list-4": {
+    "title": "Modal",
+    "children": ["flex-layout.col#icon-list-4", "modal-layout#icon-list-4"]
+  },
+
+  "modal-layout#icon-list-4": {
+    "title": "Modal",
+    "children": [
+      "modal-actions.close", 
+      "flex-layout.row#modal-content-4"
+    ]
+  },
+  "flex-layout.row#modal-content-4": {
+    "title": "Conteudo modal",
+    "children": ["info-card#modal-content-4"],
+    "props": {
+      "blockClass": "modal-content"
+    }
+  },
+  "info-card#modal-content-4": {
+    "title": "Info card conteudo",
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/images/casa-nova.png",
+      "headline": "chá de casa nova",
+      "subhead": "Diferente dos outros eventos, o Chá de casa nova não é exclusivo para noivos. Ele celebra o início de uma nova fase como mudança de casa, a decisão de morar sozinho. Além da comemoração, o evento ainda ajuda a arrecadar os utensílios necessários.",
+      "textAlignment": "center",
+      "callToActionMode": false,
+      "blockClass": "info-card-modal-content"
+    }
+  },
+
+  // icon 5
+
+  "flex-layout.row#icon-list-5": {
+    "title": "Tipo de listas 1",
+    "children": ["modal-trigger#icon-list-5"],
+    "props": { "blockClass": "icon-list-row" }
+  },
+  "flex-layout.col#icon-list-5": {
+    "title": "Tipo de listas 1",
+    "children": ["image#icon-list-5", "rich-text#icon-list-5"],
+    "props": { "blockClass": "icon-list-col" }
+  },
+  "image#icon-list-5": {
+    "title": "Icone",
+    "props": {
+      "src": "assets/svg/icon-bebe.svg",
+      "blockClass": "icon-list-img"
+    }
+  },
+  "rich-text#icon-list-5": {
+    "title": "Texto",
+    "props": {
+      "text": "chá bebê",
+      "blockClass": "icon-list-text"
+    }
+  },
+  //modal
+  "modal-trigger#icon-list-5": {
+    "title": "Modal",
+    "children": ["flex-layout.col#icon-list-5", "modal-layout#icon-list-5"]
+  },
+
+  "modal-layout#icon-list-5": {
+    "title": "Modal",
+    "children": [
+      "modal-actions.close",
+      "flex-layout.row#modal-content-5"
+    ]
+  },
+  "flex-layout.row#modal-content-5": {
+    "title": "Conteudo modal",
+    "children": ["info-card#modal-content-5"],
+    "props": {
+      "blockClass": "modal-content"
+    }
+  },
+  "info-card#modal-content-5": {
+    "title": "Info card conteudo",
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/images/casa-nova.png",
+      "headline": "chá de casa nova",
+      "subhead": "Diferente dos outros eventos, o Chá de casa nova não é exclusivo para noivos. Ele celebra o início de uma nova fase como mudança de casa, a decisão de morar sozinho. Além da comemoração, o evento ainda ajuda a arrecadar os utensílios necessários.",
+      "textAlignment": "center",
+      "callToActionMode": false,
+      "blockClass": "info-card-modal-content"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.autoCompleteOuterContainer {
+  &--header-search {
+    :global(.vtex-input-prefix__group) {
+      border: 1px solid #EBE1DC;
+      border-radius: 4px;
+    }
+  }
+}
+
+
+.imageElement {
+  &--icon-not-found {
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+
+    @media (min-width: $d) {
+      margin-top: 52px;
+    }
+  }
+}
+
+.searchBarIcon--header-search {
+  padding-right: 11px;
+  padding-bottom: 4px;
+
+  .searchIcon {
+    width: 18px;
+    overflow: visible;
+  }
+}
+.closeIcon--header-search {
+  overflow: visible!important;
+  background: transparent!important;
+}

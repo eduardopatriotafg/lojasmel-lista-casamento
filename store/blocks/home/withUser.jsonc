@@ -1,0 +1,270 @@
+{
+  "flex-layout.col#home-with-user-col": {
+    "children": [
+      "flex-layout.row#home-with-user-banner-full",
+      "flex-layout.row#user-list",
+      "flex-layout.row#cards-list-wrapper",
+      "flex-layout.row#home-with-user-wallet",
+      "flex-layout.row#home-with-user-banner-full-2"
+      // "flex-layout.row#search-list",
+      // "flex-layout.row#advantages"
+    ],
+    "props": {
+      "blockClass": "home-with-user-col"
+    }
+  },
+
+  "flex-layout.row#home-with-user-banner-full": {
+    "title": "HOME - Banners Principal",
+    "children": ["list-context.image-list#home-with-user-banner-full"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "home__hero-banners",
+        "home__banner-full-listpage",
+        "container"
+      ]
+    }
+  },
+
+  "list-context.image-list#home-with-user-banner-full": {
+    "title": "HOME - Banner Hero Full",
+    "children": ["slider-layout#home-hero-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "https://via.placeholder.com/360x240",
+          "image": "https://via.placeholder.com/1440x400",
+          "description": "Banner full",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#home-with-user-banner-full-2": {
+    "title": "HOME - Banners Principal",
+    "children": ["list-context.image-list#home-with-user-banner-full-2"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "home__hero-banners",
+        "home__banner-full-listpage",
+        "home__banner-full-listpage--2",
+        "container"
+      ]
+    }
+  },
+
+  "list-context.image-list#home-with-user-banner-full-2": {
+    "title": "HOME - Banner Hero Full",
+    "children": ["slider-layout#home-hero-banners"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "mobileImage": "https://via.placeholder.com/360x268",
+          "image": "https://via.placeholder.com/1302x268",
+          "description": "Banner full",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#user-list": {
+    "children": ["flex-layout.col#user-list-col"],
+    "props": {
+      "blockClass": ["user-list", "container"]
+    }
+  },
+
+  "flex-layout.row#search-list": {
+    "children": ["flex-layout.col#search-list-col"],
+    "props": {
+      "blockClass": "search-list"
+    }
+  },
+
+  "flex-layout.col#user-list-col": {
+    "children": [
+      "user-lists",
+      "flex-layout.row#user-wallet"
+    ],
+    "props": {
+      "blockClass": "search-list"
+    }
+  },
+
+  "flex-layout.row#user-wallet": {
+    "children": ["rich-text#user-wallet"],
+    "props": {
+      "blockClass": "user-wallet-trigger"
+    }
+  },
+
+  "rich-text#user-wallet": {
+    "props": {
+      "text": "[Minha carteira](#wallet)",
+      "blockClass": "user-wallet-anchor"
+    }
+  },
+
+  "flex-layout.col#search-list-col": {
+    "children": ["search-list"],
+    "props": {
+      "blockClass": "search-list-col"
+    }
+  },
+
+  "flex-layout.row#cards-list-wrapper": {
+    "title": "Conteúdo - Sugestões",
+    "children": [
+      "rich-text#cards-list-title",
+      "list-context.info-card-list#cards-list"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "cards-list-wrapper"
+    }
+  },
+
+  "rich-text#cards-list-title": {
+    "props": {
+      "text": "Sugestões para criar suas listas",
+      "blockClass": "cards-list-title"
+    }
+  },
+
+  "list-context.info-card-list#cards-list": {
+    "children": ["list-context-renderer#wrapped"],
+    "props": {
+      "blockClass": "list-cards-example",
+      "infoCards": [
+        {
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "assets/images/card-list-anfitriao-1.png",
+          "headline": "Chá BAR",
+          "subhead": "Outra opção para os noivos que gostam de eventos mais descontraídos é o Chá Bar. Ele é uma versão moderna do chá de panela, em que os noivos organizam uma festa durante o período do noivado com amigos e familiares mais próximos reunidos para se divertir e presentear o casal",
+          "blockClass": "info-card-example",
+          "textAlignment": "left",
+          "callToActionMode": "none"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/images/card-list-anfitriao-2.png",
+          "headline": "Chá de casa nova",
+          "subhead": "Diferente dos outros eventos, o Chá de casa nova não é exclusivo para noivos, Ele celebra o inicio de uma nova fase como mudança de casa, a decisão de morar sozinho, além da comemoração, o evento ainda ajuda a arrecadar os utensílios necessários.",
+          "blockClass": "info-card-example",
+          "textAlignment": "left",
+          "callToActionMode": "none"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "assets/images/card-list-anfitriao-3.png",
+          "headline": "Chá de cozinha & panela",
+          "subhead": "Muitas noivas optam por fazer um chá de cozinha ou chá de panela para criarem um momento descontraído com as amigas e parentes e também para ganharem alguns mimos.",
+          "blockClass": "info-card-example",
+          "textAlignment": "left",
+          "callToActionMode": "none"
+        },
+        {
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "assets/images/card-list-anfitriao-4.png",
+          "headline": "Lista de casamento",
+          "subhead": "Hoje em dia é muito comum os noivos deixarem uma lista de casamento. Assim fica muito mais prático para o casal e fácil para os convidados, que não correm o rsico de darem presentes repetidos ou não saberem escolher o que seria mais conveniente para oferecer.",
+          "blockClass": "info-card-example",
+          "textAlignment": "left",
+          "callToActionMode": "none"
+        }
+      ]
+    }
+  },
+
+  "list-context-renderer#wrapped": {
+    "props": {
+      "listElement": "ul",
+      "itemElement": "li",
+      "blockClass": "list-cards-example"
+    }
+  },
+
+  "flex-layout.row#home-with-user-wallet": {
+    "title": "Seção - Minha carteira",
+    "children": [
+      "flex-layout.col#home-with-user-wallet-instructions",
+      "flex-layout.col#wallet-wrapper"
+    ],
+    "props": {
+      "htmlId": "wallet",
+      "blockClass": "listpage__wallet"
+    }
+  },
+
+  "flex-layout.col#home-with-user-wallet-instructions": {
+    "title": "Instruções do vale presente",
+    "children": [
+      "rich-text#wallet-instructions-title",
+      "rich-text#wallet-instructions-text-1",
+      "rich-text#wallet-instructions-text-2",
+      "rich-text#wallet-instructions-text-3"
+    ],
+    "props": {
+      "blockClass": ["listpage__wallet-instructions"]
+    }
+  },
+
+  "rich-text#wallet-instructions-title": {
+    "title": "Titulo",
+    "props": {
+      "text": "## Instruções",
+      "blockClass": ["instructions-title"]
+    }
+  },
+
+  "rich-text#wallet-instructions-text-1": {
+    "title": "Texto 1",
+    "props": {
+      "text": "**1. Lorem Ipsum** <br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non magnam ab consequatur sapiente consectetur temporibus doloribus illum magni aspernatur, ut pariatur facilis voluptates nulla atque esse earum, minima accusantium eum!<br/><br/>",
+      "blockClass": ["instructions-text"]
+    }
+  },
+  "rich-text#wallet-instructions-text-2": {
+    "title": "Texto 2",
+    "props": {
+      "text": "**2. Lorem Ipsum** <br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non magnam ab consequatur sapiente consectetur temporibus doloribus illum magni aspernatur, ut pariatur facilis voluptates nulla atque esse earum, minima accusantium eum!<br/><br/>",
+      "blockClass": ["instructions-text"]
+    }
+  },
+  "rich-text#wallet-instructions-text-3": {
+    "title": "Texto 3",
+    "props": {
+      "text": "**3. Lorem Ipsum** <br/> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non magnam ab consequatur sapiente consectetur temporibus doloribus illum magni aspernatur, ut pariatur facilis voluptates nulla atque esse earum, minima accusantium eum!",
+      "blockClass": ["instructions-text"]
+    }
+  },
+  "flex-layout.col#wallet-wrapper": {
+    "children": [
+      "store-wallet-list",
+      "rich-text#main-store-trigger"
+    ],
+    "props": {
+      "blockClass": "wallet-wrapper"
+    }
+  },
+  "rich-text#main-store-trigger": {
+    "props": {
+      "text": "[ir para o site lojasmel.com](https://www.lojasmel.com/?target=_blank)",
+      "blockClass": "main-store-trigger"
+    }
+  }
+}

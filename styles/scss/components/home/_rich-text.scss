@@ -1,0 +1,84 @@
+.container {
+  &--instructions-title {
+    .paragraph,
+    .heading {
+      color: $cor-2;
+      font-weight: $bold;
+      font-size: $font-size-xl;
+      font-family: $main-font;
+    }
+  }
+
+  &--instructions-text {
+    .paragraph,
+    .heading {
+      color: $cinza;
+      font-family: $main-font;
+    }
+  }
+
+  &--cards-list-title {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.paragraph {
+  &--cards-list-title {
+    font-size: 32px !important;
+    font-weight: 700;
+    color: #1d1d1b!important;
+    text-align: center;
+  }
+}
+
+.wrapper {
+  margin: auto;
+
+  &--user-wallet-anchor {
+    width: 100%;
+    max-width: 327px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+
+    &::before {
+      content: '';
+      width: 22px;
+      height: 22px;
+      background-image: url("https://listalojasmel.vtexassets.com/assets/vtex/assets-builder/listalojasmel.list-theme/2.0.51/svg/icon-gift-list___9c4314d….svg");
+      background-size: contain;
+      display: inline-block;
+    }
+  }
+}
+
+.paragraph {
+  &--user-wallet-anchor {
+    gap: 0 10px;
+    text-align: center;
+  }
+}
+
+.link {
+  &--anchor-doubts {
+    margin-top: 20px;
+    display: block;
+    padding-left: 8px;
+    font-size: 1rem;
+    color: #bd1d1d;
+  }
+
+  &--user-wallet-anchor {
+    font-size: 1rem !important;
+    font-weight: 600;
+    color: #000 !important;
+    text-decoration: underline;
+  }
+
+  &--main-store-trigger {
+    color: #000;
+  }
+}

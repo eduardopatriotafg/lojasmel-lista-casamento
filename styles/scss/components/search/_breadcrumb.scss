@@ -1,0 +1,44 @@
+.container{
+    &--search{
+        padding-top: 24px;
+        padding-left: 4px;
+        padding-bottom: 26px;
+        display: flex;
+        .homeLink{
+            display: block;
+            .homeIcon{
+                display: none;
+            }
+
+        }
+        .link{
+            color: $cinza;
+            font-size: $font-size-sm;
+            font-weight: $regular;
+            text-transform: capitalize;
+        }
+        .arrow{
+            .caretIcon{
+                display: none;
+            }
+            &:last-child{
+                .link{
+                    color: $cor-2;
+                }
+            }
+        }
+    }
+    &--not-found{
+        @extend %container;
+        .arrow{
+            &:last-child{
+                .link{
+                    color: $cor-2;
+                    &::before{
+                        content: "Resultado de busca: ";
+                    }
+                }
+            }
+        }
+    }
+}

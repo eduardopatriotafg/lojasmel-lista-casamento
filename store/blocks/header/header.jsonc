@@ -1,0 +1,35 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "minicart-handler",
+      "flex-layout.row#header-line-top--desktop",
+      "flex-layout.row#desktop-line-1",
+      "link.product#whatsapp-float-button"
+
+    ]
+  },
+  "header-layout.mobile": {
+    "children": [
+      "minicart-handler",
+      "flex-layout.row#header-line-top--mobile",
+      "flex-layout.row#header-line-bottom--mobile",
+      "link.product#whatsapp-float-button"
+
+    ]
+  },
+
+  "link.product#whatsapp-float-button": {
+    "props": {
+      "href": "https://linktr.ee/e_lojasmel",
+      "label": "Whatsapp",
+      "target": "blank",
+      "blockClass": "whatsapp-float-button"
+    }
+  }
+}
